@@ -1,3 +1,3 @@
-# FreeCodeCamp_Proj1
+# FreeCodeCamp_Proj
 
 The Tribute Page
