@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Survey-Form proj_2</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+
+    <img id="topImg" src="https://www.peopletactics.com/wp-content/uploads/feedback-1.jpg" alt="3 feedback smileys">
+    <h1 id="title">Co. Survey Form</h1>
+    <p id="description">Thank you for taking the time to share this feedback</p>
+    <form action="#" id="survey-form">
+      <div id="basicDetails">
+        <label for="name" id="name-label">Name: </label><br>
+        <input type="text" id="name" name="fname" placeholder="Enter your name" required /><br />
+        <label for="email" id="email-label">Email: </label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required /><br />
+        <label for=" number" id="number-label">Age: </label><br>
+        <input type="number" id="number" name="number" min="1" max="99" placeholder="Age" /><br />
+      </div>
+      <div id="inputDropdown">
+        <label for="dropdown">Which option best describes your current role?</label></br>
+        <select name="current-role" id="dropdown" placeholder="Select current role">
+          <option value="Student">Student</option>
+          <option value="Full-Time-Job">Full Time Job</option>
+          <option value="Full-Time-Learner">Full Time Learner</option>
+          <option value="Prefer not to say">Prefer not to say</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div id="inputRadio">
+        <p> Would you recommend freeCodeCamp to a friend?</p>
+        <input type="radio" id="Definately" name="recommendation" value="Definately">
+        <label for="Definately">Definately</label></br>
+        <input type="radio" id="Maybe" name="recommendation" value="Maybe">
+        <label for="Maybe">Maybe</label></br>
+        <input type="radio" id="NotSure" name="recommendation" value="Not Sure">
+        <label for="NotSure">Not Sure</label>
+      </div>
+      <div id="inputCheckbox">
+        <p>What would you like to see improved?</p>
+        <input type="checkbox" id="FrontEndPro" name="suggestions" value="Front-End Projects">
+        <label for="FrontEndPro">Front End Projects</label><br>
+        <input type="checkbox" id="BackEndPro" name="suggestions" value="Back-end Projects">
+        <label for="BackEndPro"> Back-End Projects</label><br>
+        <input type="checkbox" id="DataVisualization" name="suggestions" value="Data Visualzation">
+        <label for="DataVisualization">Data Visualization</label><br>
+        <input type="checkbox" id="challenges" name="suggestions" value="challenges">
+        <label for="challenges">Challenges</label><br>
+        <input type="checkbox" id="OpenSourceCommu" name="suggestions" value="Open Source Community">
+        <label for="OpenSourceCommu">Open Source Community</label><br>
+        <input type="checkbox" id="gitterHelp" name="suggestions" value="gitter help Rooms">
+        <label for="gitterHelp">Gitter Help Rooms</label><br>
+        <input type="checkbox" id="videos" name="suggestions" value="videos">
+        <label for="videos">Videos</label><br>
+        <input type="checkbox" name="suggestions" id="AdditionalCourses" value="Additional Courses">
+        <label for="AdditionalCourses">Additional Courses</label>
+      </div>
+
+      <div id="textArea">
+        <label for="addlcomments">Any comments or suggestions?</label>
+        <textarea name="message" id="addlcomments" placeholder="Enter your comments here..."></textarea>
+      </div>
+
+      <input type="submit" id="submit" value="Submit">
+      <div id="emptySpace"></div>
+    </form>
+  </main>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>

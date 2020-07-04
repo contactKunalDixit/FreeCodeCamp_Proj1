@@ -1,0 +1,69 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-image: url("https://mcdn.wallpapersafari.com/medium/14/60/VBu9Uz.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+main {
+  width: 70%;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+#topImg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  height: auto;
+}
+
+form {
+  background-color: #0b0231;
+}
+
+h1,
+#description {
+  text-align: center;
+  color: #0b0231;
+}
+
+#basicDetails,
+#inputDropdown,
+#inputRadio,
+#inputCheckbox,
+#textArea {
+  margin: 20px 15px;
+  padding: 10px;
+  line-height: 1.5rem;
+}
+
+#basicDetails input {
+  margin-bottom: 20px;
+}
+
+#name,
+#email,
+#number,
+#dropdown,
+#addlcomments {
+  width: 100%;
+}
+
+#addlcomments {
+  height: 200px;
+}
+
+#submit {
+  margin: 10px auto;
+
+  display: block;
+  width: 40%;
+  height: 30px;
+  background-color: darkorange;
+}
+#emptySpace {
+  height: 30px;
+  width: 80%;
+}
