@@ -143,12 +143,8 @@ li {
     width: 300px;
   }
 }
-@media (min-width: 1600px) {
-  body,
-  header,
-  main {
+@media (min-width: 1200px) {
+  body {
     font-size: 2rem;
-    width: 1600px;
-    flex-grow: 1;
   }
 }
