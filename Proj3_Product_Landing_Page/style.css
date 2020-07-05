@@ -1,4 +1,3 @@
-
 /* header not fixed...only flex box used */
 
 body {
@@ -8,7 +7,7 @@ body {
 header,
 main {
   width: 80%;
-  margin: 10px auto;
+  margin: 0px auto;
   padding: 10px;
   background-image: linear-gradient(45deg, #ace3ff, #ffc8ac);
 }
@@ -39,11 +38,10 @@ main {
   position: absolute;
   left: 0;
   right: 0;
-  top: 325px;
-  flex-shrink: 0.8;
+  top: 315px;
 }
 
-.nav-link {
+ul li {
   display: inline-block;
   margin: 5px;
 }
@@ -146,8 +144,11 @@ li {
   }
 }
 @media (min-width: 1600px) {
-  body {
+  body,
+  header,
+  main {
     font-size: 2rem;
     width: 1600px;
+    flex-grow: 1;
   }
 }
