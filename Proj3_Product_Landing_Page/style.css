@@ -25,20 +25,20 @@ header {
   display: flex;
   justify-content: space-between;
 }
-/* header {
+header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1;
-} */
-/* main {
+}
+main {
   position: absolute;
   left: 0;
   right: 0;
   top: 325px;
   flex-shrink: 0.8;
-} */
+}
 
 .nav-link {
   display: inline-block;
@@ -104,6 +104,8 @@ li {
 @media (max-width: 550px) {
   body {
     font-size: 0.8rem;
+    display: flex;
+    /* flex-direction: column; */
   }
   header {
     display: flex;
@@ -130,9 +132,9 @@ li {
     margin-top: 10px;
     width: 50%;
   }
-  /*   main {
+  main {
     flex-shrink: 0.5;
-  } */
+  }
 }
 @media (max-width: 300px) {
   body {
