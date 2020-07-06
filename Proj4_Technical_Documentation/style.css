@@ -1,0 +1,46 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  background-color: rgb(240, 178, 178);
+}
+.container {
+  background-color: rgb(231, 231, 158);
+  width: 100vw;
+  /* margin: 10px auto; */
+  display: grid;
+  grid-template-areas: "navbar main";
+}
+#navbar {
+  background-color: lightgreen;
+
+  grid-area: navbar;
+  padding: 10px;
+  border: 5px solid black;
+  margin: 10px;
+  /* margin-right: -10px; */
+  /* position: fixed; */
+  /* height: 100%;*/
+  /* margin: -8px; */
+}
+
+li {
+  display: inline-block;
+  text-decoration-style: none;
+  line-height: 2.5rem;
+}
+ul,             /* to remove the default extra padding and margin with UL & li*/
+li {
+  padding: 0px;
+  margin: 0px;
+}
+
+#main-doc {
+  background-color: rgb(172, 176, 230);
+  grid-area: main;
+  margin: 10px;
+  margin-left: -10px;
+  padding: 10px;
+  border: 5px solid black;
+}
+
+@media (max-width: 550px) {
+}
