@@ -1,46 +1,80 @@
 body {
   font-family: "Roboto Mono", monospace;
   background-color: rgb(240, 178, 178);
+  line-height: 1.5rem;
 }
-.container {
-  background-color: rgb(231, 231, 158);
-  width: 100vw;
-  /* margin: 10px auto; */
-  display: grid;
-  grid-template-areas: "navbar main";
-}
+
 #navbar {
   background-color: lightgreen;
+  /* margin: 10px; */
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
 
-  grid-area: navbar;
-  padding: 10px;
-  border: 5px solid black;
-  margin: 10px;
-  /* margin-right: -10px; */
-  /* position: fixed; */
-  /* height: 100%;*/
-  /* margin: -8px; */
+  border-right: solid;
+  border-color: rgba(0, 0, 0);
 }
 
-li {
-  display: inline-block;
-  text-decoration-style: none;
-  line-height: 2.5rem;
+#JSDOC {
+  text-align: center;
 }
-ul,             /* to remove the default extra padding and margin with UL & li*/
+
+#navbar ul li {
+  list-style: none;
+  line-height: 3.5rem;
+  font-size: 1.3rem;
+}
+
+ul,             /* to remove the default extra padding and margin with UL & li */
 li {
   padding: 0px;
   margin: 0px;
 }
 
+ul {
+  padding: 15px;
+}
+
 #main-doc {
-  background-color: rgb(172, 176, 230);
-  grid-area: main;
-  margin: 10px;
-  margin-left: -10px;
-  padding: 10px;
-  border: 5px solid black;
+  background-color: rgb(146, 151, 216);
+  padding: 20px;
+  position: absolute;
+  margin-left: 310px;
+  margin-bottom: 110px;
 }
 
 @media (max-width: 550px) {
+  body {
+    font-size: 1rem;
+    background-color: rgb(255, 0, 140);
+  }
+
+  #navbar {
+    background-color: rgb(211, 240, 86);
+    position: fixed;
+    left: 0;
+    right: 0;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: auto;
+    width: 90%;
+    border: 10px solid black;
+    z-index: 1;
+    height: 400px;
+    overflow: auto;
+  }
+
+  #main-doc {
+    background-color: rgb(146, 151, 216);
+    position: absolute;
+    top: 420px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px; /*  Need to have a fixed width for centering an absolute positioned element   */
+    border: 10px solid black;
+  }
 }
