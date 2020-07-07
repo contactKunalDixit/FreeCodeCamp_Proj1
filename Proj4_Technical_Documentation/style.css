@@ -74,7 +74,12 @@ ul {
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    width: 900px; /*  Need to have a fixed width for centering an absolute positioned element   */
+    width: 900px; /*  Need to have a fixed width for centering an absolute positioned element  
+    
+    https://css-tricks.com/forums/topic/horizontal-centering-of-an-absolute-element/
+    
+    */
+
     border: 10px solid black;
   }
 }
