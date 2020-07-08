@@ -4,7 +4,103 @@
 
 2.  My portfolio should have at least one media query.
 
-3.  The height of the welcome section should be equal to the height of the viewport.
-
 4.  The navbar should always be at the top of the viewport.
+
+5.  Add Animations
+
+6. mkae 3 ver   -   flex, grid and normal
+
+font-family: 'Alfa Slab One', cursive;
+font-family: 'Amatic SC', cursive;
+font-family: 'Bangers', cursive;
+font-family: 'Fredoka One', cursive;
+font-family: 'Merienda One', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto Mono', monospace;
+
 */
+
+body {
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.03rem;
+  background-color: lightseagreen;
+}
+.container {
+  background-color: lightskyblue;
+  width: 90vw;
+  margin: auto;
+}
+
+main {
+  position: relative;
+  top: 30px;
+}
+
+/* Navbar */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: rgb(74, 88, 206);
+  z-index: 1;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+#ul-navbar {
+  display: flex;
+  justify-content: flex-end;
+}
+#navbar li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 15px;
+  background-color: red;
+  padding: 5px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  font-weight: bolder;
+}
+#navbar a {
+  text-decoration: none;
+}
+
+/* Welcome Section */
+
+#welcome-section {
+  background-color: lightsalmon;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#welcome-section p {
+  text-align: center;
+}
+
+/* Project */
+#projects {
+  background-color: lightsteelblue;
+  height: 100vh;
+  display: flex;
+}
+
+/* contact */
+#contact {
+  background-color: lightslategray;
+  height: 100vh;
+}
+
+@media (max-width: 550px) {
+  #projects {
+    display: flex;
+    flex-direction: column;
+  }
+}
