@@ -1,0 +1,126 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: gray;
+}
+
+.container {
+    width: 90%;
+    margin: 10px auto;
+    background-color: rgb(188, 181, 230);
+    /* padding: 20px; */
+}
+
+
+
+#navbar {
+    width: 100%;
+    background-color: lightcoral;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+#ul-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.li-link {
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    margin: 15px;
+}
+
+.a-link {
+    text-decoration: none;
+
+}
+
+main {
+    margin-top: 60px;
+    /* display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-content: center
+        align-content: center; */
+
+}
+
+main h1 {
+    text-align: center;
+}
+
+/* Neutralizing default user style sheet settings for ul and Li elements */
+#secSec {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#sec1 {
+    background-color: #faffcc;
+}
+
+#sec2 {
+    background-color: #ffccfa;
+}
+
+#sec3 {
+    background-color: #ffcfcc;
+}
+
+#sec4 {
+    background-color: #ccffd5;
+    margin-bottom: 20px;
+}
+
+
+img {
+
+    max-width: 100%;
+    height: auto;
+    width: 200px;
+    margin: 10px;
+
+}
+
+#imgImg {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+#headImg {
+    text-align: center;
+}
+
+#imageSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+
+
+@media(max-width:360px) {
+    body {
+        width: 360px;
+    }
+}
